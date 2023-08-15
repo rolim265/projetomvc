@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Clientes";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista de Clientes</h1>
+    <a asp-controller="Cliente" asp-action="Criar" role="button" class="btn btn-primary">Adicionar Cliente</a>
+    <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Gabriel Rolim</td>
+      <td>Rolim@email.com</td>
+      <td>(11) 99999-9999</td>
+      <td>
+          <div class="btn-group" role="group">
+            <a asp-asp-controller="Cliente" asp-action="Atualizar" role="button" class="btn btn-primary">Atualizar</a>
+            <a asp-asp-controller="Cliente" asp-action="Apagar" role="button" class="btn btn-danger">Apagar</a>
+          </div>
+       </td>
+    </tr>
+     <tr>
+         <th scope="row">1</th>
+         <td>James Rolim</td>
+         <td>jamesRolim@email.com</td>
+         <td>(11) 99999-9999</td>
+         <td>
+               <div class="btn-group" role="group">
+                   <a asp-asp-controller="Cliente" asp-action="Atualizar" role="button" class="btn btn-primary">Atualizar</a>
+                   <a asp-asp-controller="Cliente" asp-action="Apagar" role="button" class="btn btn-danger">Apagar</a>
+              </div>
+         </td>
+     </tr>
+  </tbody>
+</table>
+
+</div>
